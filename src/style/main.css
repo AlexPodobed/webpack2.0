@@ -1,0 +1,8 @@
+body{
+
+}
+:local(.box){
+    background-color: lightgoldenrodyellow;
+    padding:1em;
+    border: 1px solid silver;
+}
