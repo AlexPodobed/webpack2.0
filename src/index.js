@@ -34,14 +34,13 @@ const content = document.getElementById('content');
 document.getElementById('loadPage1').addEventListener('click', () => {
     console.log('lloading page 1');
     System.import('./page1')
-        .then(pageModule => {
-            console.log(pageModule)
-            //content.innerHTML = pageModule.default
-        })
+        .then(pageModule => content.innerHTML = pageModule.default)
 });
 
 document.getElementById('loadPage2').addEventListener('click', () => {
     console.log('lloading page 2');
+    System.import('./page2')
+        .then(pageModule => content.innerHTML = pageModule.default)
 });
 
 // app.appendChild(btn);
