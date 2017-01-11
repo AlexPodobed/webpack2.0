@@ -87,3 +87,6 @@ module.exports = {
     plugins: plugins,
     devtool: "source-map"
 };
+
+// webpack 1 converts all modules to commonJS style and it not possible to use tree-shaking
+// to enable "tree-shaking we need to use ES6 modules
