@@ -1,4 +1,4 @@
-const bmw = require('./img/bmw.jpg');
+const bmw = require('./../img/bmw.jpg');
 const Image = document.createElement('img');
 Image.src = bmw;
 

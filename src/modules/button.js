@@ -5,6 +5,7 @@ const Button = {
         this.node.addEventListener('click', () => console.log('clicked') )
     },
     init(text = this.text){
+        this.node.className ="btn btn-default";
         this.node.innerHTML = text;
         this.attachClickEvent();
         return this.node;

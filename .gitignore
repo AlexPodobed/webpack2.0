@@ -1,8 +1,4 @@
-#OS
-.DS_Store
-
 # Build
-reports/
 dist/
 
 # Editors
