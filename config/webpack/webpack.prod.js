@@ -13,30 +13,17 @@ const cfg = webpackMerge(commonWebpackCfg, {
                 test: /\.css$/,
                 exclude: '/node_modules/',
                 loaders: ExtractTextPlugin.extract([
-                    {
-                        loader: 'css-loader',
-                        options: {sourceMap: true}
-                    },
-                    {
-                        loader: 'resolve-url-loader'
-                    }
+                    'css-loader',
+                    'resolve-url-loader'
                 ])
             },
             {
                 test: /\.scss$/,
                 exclude: '/node_modules/',
                 loaders: ExtractTextPlugin.extract([
-                    {
-                        loader: 'css-loader',
-                        options: {sourceMap: true}
-                    },
-                    {
-                        loader: 'resolve-url-loader'
-                    },
-                    {
-                        loader: 'sass-loader',
-                        options: { sourceMap: true}
-                    }
+                    'css-loader',
+                    'resolve-url-loader',
+                    'sass-loader'
                 ])
             }
         ]

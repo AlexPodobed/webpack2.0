@@ -30,12 +30,7 @@ const cfg = webpackMerge(commonWebpackCfg, {
                     'style-loader',
                     'css-loader',
                     'resolve-url-loader',
-                    {
-                        loader: 'sass-loader',
-                        options: {
-                            sourceMap: true
-                        }
-                    }
+                    'sass-loader'
                 ]
             }
         ]
